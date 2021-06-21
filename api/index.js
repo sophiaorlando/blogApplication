@@ -43,6 +43,9 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoriesRoute);
 
+// app.use(express.static(path.join(__dirname, “client / build”)));
+app.use("client/build", express.static(path.join(__dirname, "client/bulid")))
+
 
 
 
